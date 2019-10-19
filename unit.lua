@@ -65,9 +65,9 @@ end
  function unit:distance()
    local minRange, maxRange = rc:GetRange(self.unitID)
    if not minRange then
-     return nil
+     return 100
    elseif not maxRange then
-     return nil
+     return 100
    else
      return maxRange
    end
